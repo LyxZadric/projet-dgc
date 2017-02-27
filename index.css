@@ -8,13 +8,16 @@ header
 {
   width : 960px;
   height: 600px;
-  background : url("tent-test.jpg") no-repeat;
+  background : url("../images/header.jpg") no-repeat;
   margin : auto;
 }
 .top-bottom
 {
   display : flex;
+  width : 100%;
+  margin : auto;
 }
+/*** navigation *****************************************************************/
 nav ul
 {
   list-style: none;
@@ -52,38 +55,40 @@ nav a:hover
 {
   left : 540px;
 }
+/*** icones réseaux sociaux ****************************************************/
 .social
 {
   display : flex;
   margin-left : 600px;
   font-size : 0px;
-  width :100px;
-  height : 40px
+  width :150px;
+  height : 40px;
 }
-.social:nth-of-type(1) li
+header .icones:nth-of-type(1)
 {
-  background : url("images-css/icones/facebook.png");
-  width : 35px;
-  height: 35px;
+  background : url("../images/icones/facebook.png") no-repeat;
+  width : 50px;
+  height: 45px;
 }
-.social:nth-of-type(2) li
+header .icones:nth-of-type(2)
 {
-  background : url("images-css/icones/twitter.png.png");
-  width : 35px;
-  height: 35px;
+  background : url("../images/icones/twitter.png") no-repeat;
+  width : 50px;
+  height: 45px;
 }
-.social:nth-of-type(3) li
+header .icones:nth-of-type(3)
 {
-  background : url("images-css/icones/instagram.png.png");
-  width : 35px;
-  height: 35px;
+  background : url("../images/icones/insta.png") no-repeat;
+  width : 50px;
+  height: 45px;
 }
-.social:nth-of-type(4) li
+header .icones:nth-of-type(4)
 {
-  background : url("images-css/icones/google.png");
-  width : 35px;
-  height: 35px;
+  background : url("../images/icones/google.png") no-repeat;
+  width : 50px;
+  height: 45px;
 }
+/*** texte central *************************************************************/
 #text-central
 {
   width : 740px;
@@ -105,14 +110,19 @@ nav a:hover
 /*** MAIN *********************************************************************/
 main
 {
-  width : 960px;
-  height: 600px;
+  width : 100%;
   margin : auto;
 }
 main h1
 {
 
 }
+.container
+{
+    width : 960px;
+    margin : auto;
+}
+/*** circuits *********************************************************************/
 #circuits
 {
   display : flex;
@@ -120,9 +130,30 @@ main h1
 .circuits-contain
 {
   width : 320px;
-  height : 250px;
-  border : 1px solid black;
+  height : 249px;
+  display : flex;
+  justify-content: center;
+  align-items: center;
 }
+.circuits-contain h2
+{
+    background-color : rgba(0,0,0, 0.4);
+    padding : 15px 25px 15px 25px;
+    color : white;
+}
+.circuits-contain:nth-of-type(1)
+{
+    background : url("../images/terredefeu.jpg") no-repeat;
+}
+.circuits-contain:nth-of-type(2)
+{
+    background : url("../images/terredeglace.jpg") no-repeat;
+}
+.circuits-contain:nth-of-type(3)
+{
+    background : url("../images/boucle.jpg") no-repeat;
+}
+/*** presentation *************************************************************/
 #presentation
 {
   display : flex;
@@ -131,11 +162,37 @@ main h1
 {
   width : 480px;
   height : 200px;
-  border : 1px solid black;
+  display : flex;
+  justify-content: center;
+  align-items: center;
+}
+.presentation-contain p
+{
+     padding-left : 20px;
+     padding-right: 20px;
+     text-align : center;
+     color : white;
+}
+.presentation-contain:nth-of-type(1)
+{
+    background-color : #5197a6;
+}
+.presentation-contain:nth-of-type(2)
+{
+    background-color : #56bc55;
+}
+/*** trombi *********************************************************************/
+#fond-arriere
+{
+    background : url("../images/arriere_plan.jpg") no-repeat;
+    background-size : lenght;
+    background-position : top center;
 }
 .trombi
 {
+  width: 960px;
   height: 330px;
+  background-color : rgba(138,138,138, 0.3);
   display : flex;
   flex-direction : column;
   align-items: center;
@@ -144,29 +201,173 @@ main h1
 {
   width: 130px;
 }
-/*** FOOTER *********************************************************************/
+/*** accompagne *****************************************************************/
 #accompagne
 {
-  height: 120px;
-  margin-top : 600px;
+  height : 120px;
+  margin-top : 475px;
+  background-color : #fcb514;
+  text-align : center;
 }
+.text:nth-of-type(1)
+{
+  font-size : 0.9em;
+  padding-left : 50px;
+  padding-right: 50px;
+  padding-top : 20px;
+  color : black;
+}
+.text:nth-of-type(2)
+{
+    font-size : 1.2em;
+    padding-top : 10px;
+}
+.text:nth-of-type(2) a
+{
+    text-decoration : none;
+    color : black;
+}
+/*** prefooter *****************************************************************/
 #prefooter
 {
+  width : 960px;
+  margin : auto;
   height: 200px;
   display : flex;
+  background-color : #8a8a8a;
 }
 .prefooter-contain
 {
   width : 320px;
   display : flex;
   flex-direction: column;
+  color : white;
 }
+.prefooter-contain:nth-of-type(1)
+{
+    display : flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align : center;
+    border-right: 1px solid white;
+    margin-top : 20px;
+    margin-bottom: 20px;
+    padding : 20px;
+}
+.prefooter-contain:nth-of-type(1) h3
+{
+    margin : 0px;
+}
+.prefooter-contain:nth-of-type(2)
+{
+    padding : 20px;
+    display : flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid white;
+    margin-top : 20px;
+    margin-bottom: 20px;
+    padding : 20px;
+}
+.prefooter-contain:nth-of-type(2) a
+{
+    text-decoration : none;
+    color : white;
+    text-align : center;
+    padding-bottom : 20px;
+}
+.prefooter-contain:nth-of-type(2) input
+{
+    width : 125px;
+    height: 30px;
+    background-color : #aaaaaa;
+    border : 1px solid white;
+    border-radius : 5px;
+    color : white;
+}
+.prefooter-contain:nth-of-type(3)
+{
+    display : flex;
+    justify-content: center;
+    align-items: center;
+}
+.prefooter-contain .social
+{
+    margin : 0px;
+    padding-left : 0px;
+}
+.prefooter-contain .icones:nth-of-type(1)
+{
+    background : url("../images/icones/facebook.png") no-repeat;
+    width : 50px;
+    height: 45px;
+}
+.prefooter-contain .icones:nth-of-type(2)
+{
+    background : url("../images/icones/twitter.png") no-repeat;
+    width : 50px;
+    height: 45px;
+}
+.prefooter-contain .icones:nth-of-type(3)
+{
+  background : url("../images/icones/insta.png") no-repeat;
+  width : 50px;
+  height: 45px;
+}
+.prefooter-contain .icones:nth-of-type(4)
+{
+  background : url("../images/icones/google.png") no-repeat;
+  width : 50px;
+  height: 45px;
+}
+/*** FOOTER *********************************************************************/
 footer
+{
+  width : 100%;
+  height: 70px;
+  margin : auto;
+  background-color : #39415d;
+  display : flex;
+}
+#footer
 {
   width : 960px;
   margin : auto;
+  display : flex;
+  color : white;
+
 }
 .footer-contain
 {
-  width : 320px;
+  height : 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer-contain:nth-of-type(1)
+{
+    width: 320px;
+    margin : 0px;
+    justify-content: flex-start;
+    padding-left: 5px;
+}
+.footer-contain:nth-of-type(2)
+{
+    width: 320px;
+    margin : 0px;
+}
+.footer-contain:nth-of-type(3)
+{
+    width : 320px;
+    margin-top : 0px;
+    justify-content: flex-end;
+    padding-right: 5px;
+}
+.footer-contain:nth-of-type(3) p
+{
+    width: 250px;
+    text-align : left;
+
 }
