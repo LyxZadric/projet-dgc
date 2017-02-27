@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title> ArcTrek - Accueil</title>
 
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="css/index.css">
   </head>
 
   <body>
@@ -14,7 +14,7 @@ HEADER
 *****************************************************************************-->
     <header>
       <div class="top-bottom">
-        <img src="images-css/icones/logo.png" alt="logo">
+        <img src="images/icones/logo.png" alt="logo">
         <nav class="navigation">
           <ul class="nav-list">
             <li><a href="#">Accueil</a></li>
@@ -32,10 +32,10 @@ HEADER
     </div>
 
     <ul class="social">
-      <li class="hidden-text"><a href="#">facebook</a></li>
-      <li class="hidden-text"><a href="#">twitter</a></li>
-      <li class="hidden-text"><a href="#">instagram</a></li>
-      <li class="hidden-text"><a href="#">google</a></li>
+        <li class="hidden-text icones"><a href="#">facebook</a></li>
+        <li class="hidden-text icones"><a href="#">twitter</a></li>
+        <li class="hidden-text icones"><a href="#">instagram</a></li>
+        <li class="hidden-text icones"><a href="#">google</a></li>
     </ul>
 
     <div id="text-central">
@@ -54,7 +54,7 @@ MAIN
   <main>
     <h1 class="hiddent-text"> Circuits islandais </h1>
 
-    <section id="circuits">
+    <section id="circuits" class="container">
       <div class="circuits-contain">
         <h2>Terre de feu</h2>
       </div>
@@ -68,14 +68,13 @@ MAIN
       </div>
     </section>
 
-    <section id="presentation">
+    <section id="presentation" class="container">
 
       <div class="presentation-contain">
         <p>Un voyage en Islande ne se limite pas à la découverte de volcans
           aux noms imprononçables. Non. Une randonnée en Islande, c’est le
           voyage nature par excellence, et à l’image des fameux volcans
           islandais, nature rime là-bas avec démesure.
-          <a href="">En savoir plus</a>
         </p>
       </div>
 
@@ -84,41 +83,36 @@ MAIN
           voyages responsables, dans des zones naturelles, en respectant
           l'environnement et en travaillant en collaboration avec les populations
           locales.
-        <a href="">En savoir plus</a>
       </p>
       </div>
 
     </section>
+    <div id="fond-arriere">
+      <div class="trombi container">
 
-      <div class="trombi">
+
         <h2> L'équipe d'ArcTrek</h2>
 
         <div class="trombi-img">
-          <a href=""><img src="images-css/trombi/trombi1.png" alt="femmeàchapeau"></a>
-          <a href=""><img src="images-css/trombi/trombi2.png" alt="hommebarbu"></a>
-          <a href=""><img src="images-css/trombi/trombi3.png" alt="femmephotographe"></a>
-          <a href=""><img src="images-css/trombi/trombi4.png" alt="homme"></a>
-          <a href=""><img src="images-css/trombi/trombi5.png" alt="femme"></a>
-          <a href=""><img src="images-css/trombi/trombi6.png" alt="guitariste"></a>
-          <a href=""><img src="images-css/trombi/trombi7.png" alt="femmerousse"></a>
+          <a href=""><img src="images/trombi/trombi1.png" alt="femmeàchapeau"></a>
+          <a href=""><img src="images/trombi/trombi2.png" alt="hommebarbu"></a>
+          <a href=""><img src="images/trombi/trombi3.png" alt="femmephotographe"></a>
+          <a href=""><img src="images/trombi/trombi4.png" alt="homme"></a>
+          <a href=""><img src="images/trombi/trombi5.png" alt="femme"></a>
+          <a href=""><img src="images/trombi/trombi6.png" alt="guitariste"></a>
+          <a href=""><img src="images/trombi/trombi7.png" alt="femmerousse"></a>
         </div>
       </div>
 
-  </main>
+      <div id="accompagne" class="container">
+        <p class="text">L’équipe d'ARCTREK vous accompagnera dans les démarches de préparation
+        de votre voyage avant de vous guider à travers cette terre de contraste.</p>
 
-  <!--***************************************************************************
-  FOOTER
-  *****************************************************************************-->
-  <footer>
-
-    <div id="accompagne">
-      <p>L’équipe d'ARCTREK vous accompagnera dans les démarches de préparation
-      de votre voyage avant de vous guider à travers cette terre de contraste.</p>
-
-      <p><a href="">Oserez-vous nous suivre dans cette aventure ?</a></p>
+        <p class="text"><a href="">Oserez-vous nous suivre dans cette aventure ?</a></p>
+      </div>
     </div>
 
-      <section id="prefooter">
+      <section id="prefooter" class="container">
         <div class="prefooter-contain">
           <h3>ArcTrek</h3>
           <p>Organisateur de voyage en Islande, ARCTREK propose des circuits
@@ -135,18 +129,23 @@ MAIN
 
         <div class="prefooter-contain">
           <ul class="social">
-            <li class="hidden-text"><a href="#">facebook</a></li>
-            <li class="hidden-text"><a href="#">twitter</a></li>
-            <li class="hidden-text"><a href="#">instagram</a></li>
-            <li class="hidden-text"><a href="#">google</a></li>
+            <li class="hidden-text icones"><a href="#">facebook</a></li>
+            <li class="hidden-text icones"><a href="#">twitter</a></li>
+            <li class="hidden-text icones"><a href="#">instagram</a></li>
+            <li class="hidden-text icones"><a href="#">google</a></li>
           </ul>
         </div>
       </section>
+ </main>
+ <!--***************************************************************************
+ FOOTER
+ *****************************************************************************-->
 
-      <section id="footer" class="top-bottom">
+    <footer>
+      <section id="footer">
         <div class="footer-contain">
-          <p>ArkTrek
-            175 Rue de la passerelle
+          <p>ArkTrek<br>
+            175 Rue de la passerelle<br>
             35000 Rennes - France
           </p>
         </div>
