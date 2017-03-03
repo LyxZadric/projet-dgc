@@ -1,6 +1,7 @@
 body
 {
   width: 100%;
+  height: auto;
   margin : 0px;
 }
 /*** HEADER *********************************************************************/
@@ -23,6 +24,7 @@ header
 {
   display : flex;
   align-items: center;
+  justify-content: center;
   padding-top : 10px;
 }
 .top img
@@ -66,13 +68,13 @@ nav a:hover
 {
   width : 225px;
   border : 1px solid white;
-  background-color: #39415d;
+  background-color: #5197a6;
   position : absolute;
   left : -9999px;
 }
 .nav-list > li:hover > ul
 {
-  left : 800px;
+  left : 1050px;
 }
 /*** icones réseaux sociaux ****************************************************/
 .social
@@ -83,6 +85,12 @@ nav a:hover
   font-size : 0px;
   width :150px;
   height : 40px;
+}
+.social a
+{
+    display :block;
+    width: 35px;
+    height: 35px;
 }
 header .icones:nth-of-type(1)
 {
@@ -108,13 +116,37 @@ header .icones:nth-of-type(4)
   width : 50px;
   height: 45px;
 }
-/*** MAIN ****************************************************/
+/*** Résumé - header ****************************************************/
 .resume-circuit
 {
-  display : flex;
-  flex-direction: column;
-  text-align: center;
-  justify-content: center;
+  width: 960px;
+  margin : auto;
+  margin-top : 100px;
+  text-align : center;
+  background-color : rgba(136,37,27,0.5);
+  padding-top : 20px;
+  padding-bottom : 20px;
+  color : white;
+}
+.resume-circuit h1, h2, h3
+{
+    margin : 0px;
+    margin-bottom : 10px;
+}
+.resume-circuit h1
+{
+    background-color : rgba(0,0,0, 0.5);
+    width : 200px;
+    height: 35px;
+    margin : auto;
+    padding-top : 10px;
+    margin-bottom : 10px;
+    font-size : 1.4em;
+}
+.resume-circuit p
+{
+    width : 800px;
+    margin : auto;
 }
 #article-circuit
 {
@@ -130,4 +162,413 @@ header .icones:nth-of-type(4)
   height : 480px;
   display : flex;
   flex-direction: column;
+}
+/*** MAIN *********************************************************************/
+main
+{
+  width : 100%;
+  margin : auto;
+}
+.container
+{
+    width : 960px;
+    margin : auto;
+}
+hr
+{
+    margin-top : 150px;
+    width: 800px;
+    margin : auto;
+}
+/*** disclaimer ****************************************************************/
+#disclaimer
+{
+    margin-top : 50px;
+}
+.disclaim-article
+{
+    display : flex;
+}
+.disclaim-contain
+{
+    width: 480px;
+    height: 150px;
+    text-align: center;
+}
+.disclaim-contain p
+{
+    padding : 20px;
+    margin : 0px;
+    color : white;
+}
+.disclaim-contain  h3
+{
+    margin : 0px;
+    margin-top : 10px;
+    color : #021253;
+    text-decoration : underline;
+}
+.disclaim-contain:nth-of-type(1)
+{
+    background-color: #D8A48F;
+}
+.disclaim-contain:nth-of-type(2)
+{
+    background-color: #aca5a0;
+}
+.formalite
+{
+    background-color : #97C5DC;
+    height: 150px;
+    text-align : center;
+    margin-bottom : 50px;
+}
+.formalite p
+{
+    text-align: center;
+    padding : 20px;
+    margin : 0px;
+    color : white;
+}
+.formalite h3
+{
+    padding-top : 10px;
+    color : #021253;
+    text-decoration : underline;
+}
+/*** article  *****************************************************************/
+.article-circuit
+{
+    margin : auto;
+    text-align : justify;
+    background : url("../images/../images/fond-volcan.jpg") no-repeat;
+    background-position: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom : 50px;
+}
+.article-contain
+{
+    width: 700px;
+    background-color : rgba(255,255,255, 0.7);
+    padding : 20px;
+}
+.article-contain h3
+{
+    text-align : center;
+    color : #88251b;
+    text-decoration : underline;
+}
+.article-contain h4
+{
+    text-decoration : underline;
+    font-weight : bold;
+    color : #938581;
+}
+.important
+{
+    margin-top: 30px;
+    width: 700px;
+    font-size : 0.8em;
+}
+/*** accompagne *****************************************************************/
+#accompagne
+{
+  height : 120px;
+  background-color : #fcb514;
+  text-align : center;
+}
+.text:nth-of-type(1)
+{
+  font-size : 0.9em;
+  padding-left : 50px;
+  padding-right: 50px;
+  padding-top : 20px;
+  color : white;
+}
+.text:nth-of-type(2)
+{
+    font-size : 1.3em;
+    padding-top : 10px;
+}
+.text:nth-of-type(2) a
+{
+    text-decoration : none;
+    color : white;
+}
+/*** prefooter *****************************************************************/
+#prefooter
+{
+  width : 960px;
+  margin : auto;
+  height: 200px;
+  display : flex;
+  background-color : #8a8a8a;
+}
+.prefooter-contain
+{
+  width : 320px;
+  display : flex;
+  flex-direction: column;
+  color : white;
+}
+.prefooter-contain:nth-of-type(1)
+{
+    display : flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align : center;
+    border-right: 1px solid white;
+    margin-top : 20px;
+    margin-bottom: 20px;
+    padding : 20px;
+}
+.prefooter-contain:nth-of-type(1) h3
+{
+    margin : 0px;
+}
+.prefooter-contain:nth-of-type(2)
+{
+    padding : 20px;
+    display : flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid white;
+    margin-top : 20px;
+    margin-bottom: 20px;
+    padding : 20px;
+}
+.prefooter-contain:nth-of-type(2) a
+{
+    text-decoration : none;
+    color : white;
+    text-align : center;
+    padding-bottom : 20px;
+}
+.prefooter-contain:nth-of-type(2) input
+{
+    width : 125px;
+    height: 30px;
+    background-color : #aaaaaa;
+    border : 1px solid white;
+    border-radius : 5px;
+    color : white;
+}
+.prefooter-contain:nth-of-type(3)
+{
+    display : flex;
+    justify-content: center;
+    align-items: center;
+}
+.prefooter-contain .social
+{
+    margin : 0px;
+    padding-left : 0px;
+}
+.prefooter-contain .icones:nth-of-type(1)
+{
+    background : url("../images/icones/facebook.png") no-repeat;
+    width : 50px;
+    height: 45px;
+}
+.prefooter-contain .icones:nth-of-type(2)
+{
+    background : url("../images/icones/twitter.png") no-repeat;
+    width : 50px;
+    height: 45px;
+}
+.prefooter-contain .icones:nth-of-type(3)
+{
+  background : url("../images/icones/insta.png") no-repeat;
+  width : 50px;
+  height: 45px;
+}
+.prefooter-contain .icones:nth-of-type(4)
+{
+  background : url("../images/icones/google.png") no-repeat;
+  width : 50px;
+  height: 45px;
+}
+/*** FOOTER *********************************************************************/
+footer
+{
+  width : 100%;
+  height: 70px;
+  margin : auto;
+  background-color : #39415d;
+  display : flex;
+}
+#footer
+{
+  width : 960px;
+  margin : auto;
+  display : flex;
+  color : white;
+}
+.footer-contain
+{
+  height : 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer-contain:nth-of-type(1)
+{
+    width: 320px;
+    margin : 0px;
+    justify-content: flex-start;
+    padding-left: 5px;
+}
+.footer-contain:nth-of-type(2)
+{
+    width: 320px;
+    margin : 0px;
+}
+.footer-contain:nth-of-type(3)
+{
+    width : 320px;
+    margin-top : 0px;
+    justify-content: flex-end;
+    padding-right: 5px;
+}
+.footer-contain:nth-of-type(3) p
+{
+    width: 250px;
+    text-align : left;
+}
+
+/*******************************************************************************
+PAGE : TERRE DE GLACE
+*******************************************************************************/
+#ice header
+{
+  width : 100%;
+  height: 600px;
+  background : url("../images/terredeglace2.jpg") no-repeat;
+  background-position : 50% 70px;
+  margin : auto;
+}
+#ice .resume-circuit
+{
+  width: 960px;
+  margin : auto;
+  margin-top : 100px;
+  text-align : center;
+  background-color : rgba(2,18,83,0.5);
+  padding-top : 20px;
+  padding-bottom : 20px;
+  color : white;
+}
+#ice .disclaim-contain  h3
+{
+    margin : 0px;
+    margin-top : 10px;
+    color : #021253;
+    text-decoration : underline;
+}
+#ice .disclaim-contain:nth-of-type(1)
+{
+    background-color: #8797af;
+}
+#ice .disclaim-contain:nth-of-type(2)
+{
+    background-color: #8a8a8a;
+}
+#ice .formalite
+{
+    background-color : #56667a;
+    height: 150px;
+    text-align : center;
+    margin-bottom : 50px;
+}
+#ice .formalite h3
+{
+    padding-top : 10px;
+    color : #021253;
+    text-decoration : underline;
+}
+#ice .article-circuit
+{
+    margin : auto;
+    text-align : justify;
+    background : url("../images/../images/fond-ice.jpg") no-repeat;
+    background-position: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom : 50px;
+}
+#ice .article-contain h3
+{
+    text-align : center;
+    color : #021253;
+    text-decoration : underline;
+}
+
+/*******************************************************************************
+PAGE : BOUCLE ISLANDAISE
+*******************************************************************************/
+#green header
+{
+  width : 100%;
+  height: 600px;
+  background : url("../images/boucle2.jpg") no-repeat;
+  background-position : 50% 70px;
+  margin : auto;
+}
+#green .resume-circuit
+{
+  width: 960px;
+  margin : auto;
+  margin-top : 100px;
+  text-align : center;
+  background-color : rgba(116,190,115,0.5);
+  padding-top : 20px;
+  padding-bottom : 20px;
+  color : white;
+}
+#green .disclaim-contain  h3
+{
+    margin : 0px;
+    margin-top : 10px;
+    color : #021253;
+    text-decoration : underline;
+}
+#green .disclaim-contain:nth-of-type(1)
+{
+    background-color: #788585;
+}
+#green .disclaim-contain:nth-of-type(2)
+{
+    background-color: #8a8a8a;
+}
+#green .formalite
+{
+    background-color : #60554f;
+    height: 150px;
+    text-align : center;
+    margin-bottom : 50px;
+}
+#green .formalite h3
+{
+    padding-top : 10px;
+    color : #021253;
+    text-decoration : underline;
+}
+#green .article-circuit
+{
+    margin : auto;
+    text-align : justify;
+    background : url("../images/../images/fond-green.jpg") no-repeat;
+    background-position: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom : 50px;
+}
+#green .article-contain h3
+{
+    text-align : center;
+    color : #74be73;
+    text-decoration : underline;
 }
