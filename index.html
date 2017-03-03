@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title> ArcTrek - Accueil</title>
-
+    <link rel="shortcut icon" href="images/icones/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/icones/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/index.css">
   </head>
 
@@ -21,9 +22,9 @@ HEADER
               <li><a href="#">Accueil</a></li>
               <li><a href="#">Nos circuits</a>
                 <ul>
-                  <li><a href="#">Terre de feu</a></li>
-                  <li><a href="#">Terre de glace</a></li>
-                  <li><a href="#">Boucle islandaise</a></li>
+                  <li><a href="terredefeu.html">Terre de feu</a></li>
+                  <li><a href="terredeglace.html">Terre de glace</a></li>
+                  <li><a href="boucleislandaise.html">Boucle islandaise</a></li>
                 </ul>
               </li>
               <li><a href="#">A propos</a></li>
@@ -34,10 +35,10 @@ HEADER
       </div>
     <div class="container">
       <ul class="social">
-          <li class="hidden-text icones"><a href="#">facebook</a></li>
-          <li class="hidden-text icones"><a href="#">twitter</a></li>
-          <li class="hidden-text icones"><a href="#">instagram</a></li>
-          <li class="hidden-text icones"><a href="#">google</a></li>
+          <li class="hidden-text icones"><a href="https://www.facebook.com">facebook</a></li>
+          <li class="hidden-text icones"><a href="https://www.twitter.com">twitter</a></li>
+          <li class="hidden-text icones"><a href="https://www.instagram.com">instagram</a></li>
+          <li class="hidden-text icones"><a href="https://plus.google.com">google</a></li>
       </ul>
 
       <div id="text-central">
@@ -59,15 +60,15 @@ MAIN
 
     <section id="circuits" class="container">
       <div class="circuits-contain">
-        <h2><a href="#">Terre de feu</a></h2>
+        <h2><a href="terredefeu.html">Terre de feu</a></h2>
       </div>
 
       <div class="circuits-contain">
-        <h2><a href="#">Terre de glace</a></h2>
+        <h2><a href="terredeglace.html">Terre de glace</a></h2>
       </div>
 
       <div class="circuits-contain">
-        <h2><a href="#">Boucle islandaise</a></h2>
+        <h2><a href="boucleislandaise.html">Boucle islandaise</a></h2>
       </div>
     </section>
 
@@ -94,16 +95,44 @@ MAIN
       <div class="trombi container">
 
 
-        <h2> L'équipe d'ArcTrek</h2>
+        <h2 id="equipe"> L'équipe d'ArcTrek</h2>
 
         <div class="trombi-img">
-          <a href=""><img src="images/trombi/trombi1.png" alt="femmeàchapeau"></a>
-          <a href=""><img src="images/trombi/trombi2.png" alt="hommebarbu"></a>
-          <a href=""><img src="images/trombi/trombi3.png" alt="femmephotographe"></a>
-          <a href=""><img src="images/trombi/trombi4.png" alt="homme"></a>
-          <a href=""><img src="images/trombi/trombi5.png" alt="femme"></a>
-          <a href=""><img src="images/trombi/trombi6.png" alt="guitariste"></a>
-          <a href=""><img src="images/trombi/trombi7.png" alt="femmerousse"></a>
+            <section>
+          <img src="images/trombi/trombi1.png" alt="femmeàchapeau">
+          <h2>Marie JANE</h2>
+          <h3>Directrice </h3>
+            </section>
+            <section>
+          <img src="images/trombi/trombi2.png" alt="hommebarbu">
+          <h2>Jerry KAN</h2>
+          <h3>Responsable agence</h3>
+            </section>
+            <section>
+          <img src="images/trombi/trombi3.png" alt="femmephotographe">
+          <h2>Aude VESSEL</h2>
+          <h3>Graphiste</h3>
+            </section>
+            <section>
+          <img src="images/trombi/trombi4.png" alt="homme">
+          <h2>Larry BAMBELLE</h2>
+          <h3>Directeur artistique</h3>
+            </section>
+            <section>
+          <img src="images/trombi/trombi5.png" alt="femme">
+          <h2>Kelly DIOTE</h2>
+          <h3>Responsable séjour</h3>
+            </section>
+            <section>
+          <img src="images/trombi/trombi6.png" alt="guitariste">
+          <h2>Simon STRUEUX</h2>
+          <h3>Chef de projet</h3>
+            </section>
+            <section>
+         <img src="images/trombi/trombi7.png" alt="femmerousse">
+         <h2>Sarah COURCI</h2>
+         <h3>Responsable marketing</h3>
+            </section>
         </div>
       </div>
 
@@ -127,7 +156,7 @@ MAIN
         <div class="prefooter-contain">
           <a href="">www.arctrek.com</a>
           <a href="">contact@Arctrek.com</a>
-          <input type="button" value="Nous contacter">
+          <a id="contacter" href="">Nous contacter</a>
         </div>
 
         <div class="prefooter-contain">
